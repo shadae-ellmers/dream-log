@@ -5,6 +5,7 @@ const connection = require('knex')(config)
 module.exports = {
   getDreams,
   getADream,
+  addDream,
 }
 
 // function getUsers(db = connection) {
@@ -21,4 +22,8 @@ function getDreams(db = connection) {
 
 function getADream(id, db = connection) {
   return db('dreams').select().where('id', id).first()
+}
+
+function addDream(newDream, db = connection) {
+  return db('dreams').insert(newDream)
 }
