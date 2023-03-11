@@ -8,9 +8,9 @@ module.exports = {
 }
 
 function getUsers(db = connection) {
-  return db('users').select()
+  return db('dreams').select()
 }
 
 function getUser(id, db = connection) {
-  return db('users').where('id', id).first()
+  return db('dreams').where('id', id).first()
 }
