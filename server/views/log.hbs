@@ -1,3 +1,6 @@
 {{>header}}
-<p>pls work</p>
+{{#each dream}}
+  <p>{{title}}</p>
+  <p>{{date_day}}/{{date_month}}/{{date_year}}</p>
+{{/each}}
 {{>footer}}
