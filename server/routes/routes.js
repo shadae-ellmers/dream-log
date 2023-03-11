@@ -22,7 +22,14 @@ router.get('/log', (req, res) => {
 })
 
 router.get('/dream/:id', (req, res) => {
-  res.send('woooo')
+  let id = req.params.id
+  db.getADream(id)
+    .then((dream) => {
+      res.render('detail', dream)
+    })
+    .catch((err) => {
+      console.log('oops' + err.message)
+    })
 })
 
 router.get('/add', (req, res) => {

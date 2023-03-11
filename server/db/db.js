@@ -4,6 +4,7 @@ const connection = require('knex')(config)
 
 module.exports = {
   getDreams,
+  getADream,
 }
 
 // function getUsers(db = connection) {
@@ -16,4 +17,8 @@ module.exports = {
 
 function getDreams(db = connection) {
   return db('dreams').select()
+}
+
+function getADream(id, db = connection) {
+  return db('dreams').select().where('id', id).first()
 }
