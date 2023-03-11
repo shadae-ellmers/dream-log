@@ -14,7 +14,7 @@ router.get('/dreams', (req, res) => {
       const dataObj = {
         dream,
       }
-      res.render('log', dataObj)
+      res.render('dreams', dataObj)
     })
     .catch((err) => {
       console.log('oops' + err.message)
