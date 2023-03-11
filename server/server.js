@@ -5,6 +5,10 @@ const routes = require('./routes/routes')
 
 const server = express()
 
+const publicFolder = __dirname + '/public'
+server.use(express.static(publicFolder))
+server.use(express.urlencoded({ extended: false }))
+
 // Middleware
 server.engine('hbs', hbs.engine({ extname: 'hbs' }))
 server.set('view engine', 'hbs')

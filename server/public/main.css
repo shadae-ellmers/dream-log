@@ -1,0 +1,26 @@
+@font-face {
+  font-family: enterFont;
+  src: url(./arcadeclassic/ARCADECLASSIC.TTF)
+}
+
+html {
+  background-image: url('./images/cloud-gif.webp');
+}
+
+.enter-link {
+  font-family: enterFont;
+  font-size: 30px;
+  background-color: #5d7599;
+  color: #f7f0c6;
+  text-decoration: none;
+  text-align: center;
+  height: 50px;
+  width: 250px;
+  padding-top: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
