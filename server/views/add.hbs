@@ -1,0 +1,30 @@
+{{>header}}
+<form action="/loner/signup" method="post" class="form">
+
+  <label for="title">title:</label>
+  <input type="text" name="title">
+
+  <div>
+    <p>date of dream:</p>
+    <label for="date_day">day:</label>
+    <input type="text" name="date_day">
+    <label for="date_month">month:</label>
+    <input type="text" name="date_month">
+    <label for="date_year">year:</label>
+    <input type="text" name="date_year">
+  </div>
+
+  <label for="themes">notable themes:</label>
+  <textarea rows="4" name="themes"></textarea>
+
+  <label for="stories">key stories:</label>
+  <textarea rows="4" name="stories"></textarea>
+
+  <label for="feelings">feelings:</label>
+  <textarea rows="4" name="feelings"></textarea>
+
+  <button type="submit">send away</button>
+
+</form>
+
+{{>footer}}

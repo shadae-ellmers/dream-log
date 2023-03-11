@@ -33,7 +33,7 @@ router.get('/dream/:id', (req, res) => {
 })
 
 router.get('/add', (req, res) => {
-  res.send('ok ok')
+  res.render('add')
 })
 
 module.exports = router
