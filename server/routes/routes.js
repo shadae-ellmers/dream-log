@@ -14,4 +14,16 @@ router.get('/', (req, res) => {
     })
 })
 
+router.get('/log', (req, res) => {
+  res.render('log')
+})
+
+router.get('/dream/:id', (req, res) => {
+  res.send('woooo')
+})
+
+router.get('/add', (req, res) => {
+  res.send('ok ok')
+})
+
 module.exports = router
