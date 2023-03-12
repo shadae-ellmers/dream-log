@@ -1,7 +1,17 @@
 {{>header}}
-<p>{{title}}</p>
-<p>{{date_day}}/{{date_month}}/{{date_year}}</p>
-<p>{{themes}}</p>
-<p>{{stories}}</p>
-<p>{{feelings}}</p>
+<br>
+<div class="card">
+  <div class="container">
+    <div class="dream">
+      <p>{{title}}</p>
+      <p>date: {{date_day}}.{{date_month}}.{{date_year}}</p>
+      <p>key themes: </p>
+      <p>{{themes}}</p>
+      <p>main stories: </p>
+      <p>{{stories}}</p>
+      <p>notable feelings: </p>
+      <p>{{feelings}}</p>
+    </div>
+  </div>
+</div>
 {{>footer}}

@@ -1,8 +1,15 @@
 {{>header}}
 <br>
-<a href="/add">add new dream</a>
-{{#each dream}}
-  <p>{{title}}</p>
-  <p>{{date_day}}/{{date_month}}/{{date_year}}</p>
-{{/each}}
+<div class="card">
+  <a href="/add">add new dream</a>
+    <div class="container">
+      {{#each dream}}
+        <div class="dream">
+        <p>{{title}}</p>
+        <p>{{date_day}}.{{date_month}}.{{date_year}}</p>
+        <a class="brain"href="/dreams/{{id}}"><img class="brain" src="/images/brain.png"></a>
+        </div>
+      {{/each}}
+    </div>
+</div>
 {{>footer}}
