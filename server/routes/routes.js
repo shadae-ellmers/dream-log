@@ -57,4 +57,8 @@ router.post('/add', (req, res) => {
     })
 })
 
+router.get('/about-me', (req, res) => {
+  res.render('about-me')
+})
+
 module.exports = router
