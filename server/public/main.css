@@ -66,8 +66,9 @@ a {
   color: #5d7599;
   background-color: #f7f0c6;
   padding: 5px;
-  margin-bottom: 20px;
+  margin: 20px;
   border-radius: 5px;
+  font-size: 30px;
 }
 
 p {
@@ -79,10 +80,10 @@ h1 {
   border-radius: 5px;
   color: #f7f0c6;
   font-family: enterFont;
-  height: 50px;
-  width: 250px;
+  height: 70px;
+  width: 500px;
   padding-top: 20px;
-  font-size: 30px;
+  font-size: 50px;
   margin: auto;
 }
 
