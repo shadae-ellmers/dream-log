@@ -11,7 +11,6 @@ exports.up = function (knex) {
     table.integer('date_month')
     table.integer('date_year')
     table.string('stories')
-    table.string('feelings')
   })
 }
 
