@@ -169,7 +169,6 @@ button {
 }
 
 .me-img {
-  border-radius: 5px;
   height: 300px;
   width: 300px;
   padding-left: 20px;
@@ -185,10 +184,14 @@ button {
 }
 
 .text-section {
+  background-color:#5d7599;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-around;
-  text-align:justify;
+  text-align: left;
   padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
 }
