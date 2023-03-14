@@ -168,6 +168,26 @@ button {
 }
 
 .me-img {
-  max-width: 200px;
-  border-radius: 50%;
+  border-radius: 5px;
+  height: 300px;
+  width: 300px;
+  padding-left: 20px;
+}
+
+.me-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  align-items: center;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  text-align:justify;
+  padding-left: 20px;
 }
