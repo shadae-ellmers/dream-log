@@ -37,7 +37,7 @@ router.get('/add', (req, res) => {
 })
 
 router.post('/add', (req, res) => {
-  const { title, date_day, date_month, date_year, themes, stories, feelings } =
+  const { title, date_day, date_month, date_year, themes, stories, feeling } =
     req.body
   const newDream = {
     title: title,
@@ -46,7 +46,7 @@ router.post('/add', (req, res) => {
     date_year: date_year,
     themes: themes,
     stories: stories,
-    feelings: feelings,
+    feeling: feeling,
   }
   db.addDream(newDream)
     .then(() => {

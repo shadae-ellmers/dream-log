@@ -14,6 +14,7 @@ exports.seed = async function (knex) {
       date_month: 3,
       date_year: 2023,
       stories: 'thing',
+      feeling: 'sad',
     },
     {
       id: 2,
@@ -23,6 +24,7 @@ exports.seed = async function (knex) {
       date_month: 3,
       date_year: 2023,
       stories: 'thing',
+      feeling: 'sadder',
     },
     {
       id: 3,
@@ -32,6 +34,7 @@ exports.seed = async function (knex) {
       date_month: 3,
       date_year: 2023,
       stories: 'thing',
+      feeling: 'saddest',
     },
   ])
 }

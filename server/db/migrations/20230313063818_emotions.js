@@ -5,14 +5,7 @@
 exports.up = function (knex) {
   return knex.schema.createTable('emotions', function (table) {
     table.increments('id').primary()
-    table.boolean('anxious')
-    table.boolean('fear')
-    table.boolean('surprise')
-    table.boolean('sadness')
-    table.boolean('lust')
-    table.boolean('happiness')
-    table.boolean('anger')
-    table.boolean('shame')
+    table.string('feeling')
   })
 }
 
